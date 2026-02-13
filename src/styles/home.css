@@ -16,7 +16,7 @@
     --cont-color: hsla(0, 0%, 98%, 0.815);
     --input-cont: hsl(0, 0%, 98%);
     --check-color: hsl(234, 39%, 85%);
-        --todo-hover: hsla(240, 14%, 11%, 0.082);
+    --todo-hover: hsla(240, 14%, 11%, 0.082);
 
 }
 
@@ -32,16 +32,17 @@
     background-size: auto;
     height: 300px;
     align-items: flex-start;
-    padding-top: 50px;
+    padding-top: 40px;
     background-color: var(--cont-color);
-    min-height: 92.15vh;
+    min-height: 98vh;
+    overflow-y: hidden;
 }
+
 
 .container2 {
     width: 100%;
     max-width: 550px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-
 }
 
 .container3 {
@@ -151,12 +152,18 @@
     border-radius: 3px;
     padding: 10px 8px 10px 14px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-
+    cursor: grab;
 }
 
+.container6.dragging {
+  opacity: 0.9;    
+  transform: scale(1.03); 
+  border-bottom: 1px solid hsl(220, 98%, 61%); 
+  background-color: var(--todo-hover); 
+}
 .container6:hover {
     background-color: var(--todo-hover);
-    cursor: pointer;
+
 }
 
 
@@ -179,6 +186,7 @@
 
 
 .todoText.completed {
+    color: hsla(240, 1%, 50%, 0.6);
     text-decoration: line-through;
 }
 
@@ -196,7 +204,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 18px;
+    padding: 16px 18px;
+}
+
+.container7.notask {
+    padding: 80px 18px;
+
 }
 
 .container7 div {
@@ -236,9 +249,14 @@
     color: var(--text-input);
     font-size: 13px;
     text-align: center;
-    margin-top: 35.5px;
-    margin-bottom: 10px;
+    margin-top: 14.5px;
     display: block;
+}
+
+.no-todos {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-input);
 }
 
 /* SMALL SCREEN SIZE */
@@ -279,4 +297,31 @@
     .container7 div {
         display: none;
     }
+    
+    .container7.notask {
+    padding: 0px 18px;
+
 }
+}
+
+.container6b {
+    padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+
+   .container2 {
+    margin-left: 8px;
+    margin-right: 8px;
+   }
+}
+
+@media (max-width: 772px) {
+
+.container7.notask {
+    padding: 80px 18px;
+
+}
+
+}
+
