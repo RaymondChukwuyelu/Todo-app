@@ -1,4 +1,25 @@
+# Todo App
+
+A React + TypeScript Todo app with dark/light theme and drag-and-drop functionality.
+
+## Features
+
+- Add, complete, and delete todos
+- Filter todos (All, Active, Completed)
+- Dark/light theme toggle
+- Drag and drop to reorder todos
+- Persist todos in localStorage
+
 # Getting Started with Create React App
+## Installation
+
+1. Clone the repository:  
+
+git clone https://github.com/RaymondChukwuyelu/todo-app.git
+
+cd todo-app
+
+npm install
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
