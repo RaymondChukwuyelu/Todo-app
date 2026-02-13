@@ -101,7 +101,7 @@ const Home = () => {
     }
 
     const clearCompleted = () => {
-        // Function to deleting completed todos
+        // Function for deleting completed todos
         setTodos(todos.filter(todo => !todo.completed));
     }
 
