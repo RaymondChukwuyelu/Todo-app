@@ -34,7 +34,7 @@
     align-items: flex-start;
     padding-top: 40px;
     background-color: var(--cont-color);
-    min-height: 98vh;
+    min-height: 98.36vh;
     overflow-y: hidden;
 }
 
@@ -325,3 +325,11 @@
 
 }
 
+@media (max-width: 647px) {
+
+.container7.notask {
+    padding: 90px 18px;
+
+}
+
+}
